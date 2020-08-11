@@ -6,4 +6,4 @@ RUN pip3 install impacket --upgrade --user
 RUN pip3 install esphome
 RUN pip3 install -U platformio
 RUN platformio platform update
-CMD pip3 install -U platformio | : && esphome /config dashboard --password $password
+CMD esphome /config dashboard --password $password
