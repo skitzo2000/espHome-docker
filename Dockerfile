@@ -5,5 +5,5 @@ RUN apt-get -y install iputils-ping
 RUN pip3 install impacket --upgrade --user
 RUN pip3 install esphome
 RUN pip3 install -U platformio
-RUN python3 platformio platform update
+RUN platformio platform update
 CMD pip3 install -U platformio | : && esphome /config dashboard --password $password
